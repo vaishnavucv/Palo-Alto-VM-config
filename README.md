@@ -22,7 +22,7 @@ Before running this script, ensure you have the following installed:
 
 1. Clone this repository or download the script to your local machine:
    ```bash
-   git clone https://github.com/vaishnavucv/Palo-Alto-VM-config/
+   git clone https://github.com/vaishnavucv/Palo-Alto-VM-config/ && sudo apt-get install python3-paramiko -y
    ```
 2. Ensure you have Python installed.
 3. Run the script as a user with permission to execute VBoxManage commands.
@@ -30,6 +30,7 @@ Before running this script, ensure you have the following installed:
 -  To use the script, simply run it from your terminal:
   ```bash
   cd Palo-Alto-VM-config
+  chmod +x Palo-VM-config.py
   python3 Palo-VM-config.py
   ```
 - Make sure to modify the script constants like SSH_IP, SSH_USERNAME, and SSH_PASSWORD to match your VM's configuration.
